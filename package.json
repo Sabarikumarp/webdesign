@@ -1,0 +1,15 @@
+{
+  "name": "sass-web-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass ./assets/scss/main.scss ./assets/css/index.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}

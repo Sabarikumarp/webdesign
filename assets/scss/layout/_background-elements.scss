@@ -1,0 +1,306 @@
+@use "../abstract/mixins" as mixins;
+
+.background-shapes {
+  @include mixins.responsive(xs) {
+    display: none;
+  }
+
+  .box1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #3f43fd;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(lg) {
+      top: 15%;
+    }
+  }
+  .box2 {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #24d31e;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(md) {
+      top: 60%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 60%;
+    }
+    @include mixins.responsive(xl) {
+      top: 53%;
+    }
+  }
+  .box3 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #b31eac;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 17.5%;
+    }
+
+    @include mixins.responsive(md) {
+      top: 17%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 17%;
+    }
+  }
+  .box4 {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #108b8b;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(md) {
+      top: 60%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 64%;
+    }
+    @include mixins.responsive(xl) {
+      top: 53%;
+    }
+  }
+  .box5 {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid #229c12;
+    border-radius: 0.35rem;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+  }
+  .dot1 {
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    width: 8px;
+    height: 8px;
+    background-color: #3f43fd;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(md) {
+      top: 48%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 60%;
+      left: 30%;
+    }
+
+    @include mixins.responsive(xl) {
+      top: 40%;
+      left: 50%;
+    }
+  }
+  .dot2 {
+    position: absolute;
+    top: 18%;
+    right: 4%;
+    width: 8px;
+    height: 8px;
+    background-color: #f428fa;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+  }
+  .dot3 {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 8px;
+    height: 8px;
+    background-color: #3f43fd;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(md) {
+      top: 30%;
+    }
+  }
+  .dot4 {
+    position: absolute;
+    top: 85%;
+    right: 60%;
+    width: 8px;
+    height: 8px;
+    background-color: #f428fa;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      display: none;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 60%;
+      left: 60%;
+      display: block;
+    }
+
+    @include mixins.responsive(xl) {
+      top: 55%;
+      left: 40%;
+    }
+  }
+
+  .heart1 {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    z-index: -1;
+    color: #f4284a;
+    background-color: transparent;
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      left: 5%;
+    }
+  }
+  .heart2 {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 69%;
+    left: 45%;
+    z-index: -1;
+    color: #f4284a;
+    background-color: transparent;
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      display: none;
+    }
+
+    @include mixins.responsive(lg) {
+      display: block;
+      top: 62%;
+      left: 40%;
+    }
+    @include mixins.responsive(xl) {
+      top: 35%;
+      left: 45%;
+    }
+  }
+
+  .heart3 {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 60%;
+    left: 90%;
+    z-index: -1;
+    color: #f4284a;
+    background-color: transparent;
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(xl) {
+      display: block;
+      top: 52%;
+      left: 60%;
+    }
+  }
+  .circle1 {
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #eb8735;
+    border-radius: 80%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(md) {
+      top: 40%;
+    }
+    @include mixins.responsive(xl) {
+      top: 35%;
+      left: 5%;
+    }
+  }
+  .circle2 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #23e06b;
+    border-radius: 80%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      display: none;
+    }
+    @include mixins.responsive(xl) {
+      top: 15%;
+      left: 25%;
+      display: block;
+    }
+  }
+  .circle3 {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #3f43fd;
+    border-radius: 80%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(md) {
+      top: 30%;
+      left: 90%;
+    }
+  }
+}

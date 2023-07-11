@@ -1,0 +1,33 @@
+@import "./abstract/variable";
+@import "./abstract/mixins";
+
+@import "./base/reset";
+@import "./base/global";
+
+
+
+@import "./components/buttons";
+@import"./components/badges";
+@import"./components/forms";
+
+
+@import "./layout/header";
+@import "./layout/background-elements";
+@import "./layout/footer";
+
+
+
+@import "./utilites/animations";
+@import "./utilites/spacing";
+
+
+
+//pages
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/roadmap";
+@import "./pages/courses";
+@import "./pages/contact";
+
+

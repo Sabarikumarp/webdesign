@@ -1,0 +1,22 @@
+@use "../abstract/functions" as func;
+
+
+.form-control{
+    padding: 0.8rem ;
+    width: 100%;
+    background-color: rgb(247,247,247);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+
+    &:focus{
+        border-radius: 2px solid func.theme-colors();
+    }
+
+
+}   
+
+.resize-none{
+    resize: none;
+}
